@@ -1,0 +1,169 @@
+@font-face {
+  font-family: Courgette;
+  src: url(../fonts/Courgette-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Noto Sans HK';
+  src: url('../fonts/NotoSansHK-Regular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Sans HK';
+  src: url('../fonts/NotoSansHK-Medium.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Noto Sans HK';
+  src: url('../fonts/NotoSansHK-Bold.otf');
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Noto Sans HK' !important;
+}
+
+$site-width: 1000px;
+
+body {
+  font-size: 14px;
+}
+
+.page-header {
+  min-height: 400px;
+  background: rgb(57,114,193);
+  background: linear-gradient(41deg, rgba(57,114,193,1) 0%, rgba(193,235,251,1) 100%);
+  position: relative;
+  padding-bottom: 1px;
+
+  .content-wrapper {
+    max-width: $site-width;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .navbar-container {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.05) 100%);
+
+    .navbar-wrapper {
+      padding: 20px;
+      display: flex;
+
+      .navbar-options {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-end;
+        flex-direction: column;
+      }
+    }
+  }
+
+  h1.page-title {
+    font-family: Courgette;
+    color: white;
+    font-size: 1.8em;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+}
+
+.macbook-wrapper {
+  position: relative;
+  margin: 25px 0;
+  background-image: url(../images/macbook.png);
+  background-size: 1000px 450px;
+  height: 450px;
+}
+
+$solr_base03: #002b36;
+$solr_base02: #073642;
+$solr_base01: #586e75;
+$solr_base00: #657b83;
+$solr_base0: #839496;
+$solr_base1: #93a1a1;
+$solr_base2: #eee8d5;
+$solr_base3: #fdf6e3;
+$solr_yellow: #b58900;
+$solr_orange: #cb4b16;
+$solr_red: #dc322f;
+$solr_magenta: #d33682;
+$solr_violet: #6c71c4;
+$solr_blue: #268bd2;
+$solr_cyan: #2aa198;
+$solr_green: #859900;
+
+.fg_solr_red {
+  color: $solr_red;
+}
+
+.fg_solr_green {
+  color: $solr_green;
+}
+
+.fg_solr_orange {
+  color: $solr_orange;
+}
+
+.fg_solr_blue {
+  color: $solr_blue;
+}
+
+.macbook-screen {
+  background-color: #002b36;
+  color: #93a1a1;
+  width: 620px;
+  height: 360px;
+  position: absolute;
+  top: 22px;
+  left: 190px;
+  font-family: 'Droid Sans Mono for Powerline';
+  display: flex;
+
+  .line-number-col {
+    width: 30px;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-right: 5px;
+  }
+
+  .editor {
+    padding-left: 5px;
+  }
+}
+
+.quote {
+  background: #EEE;
+  width: 70%;
+  margin: 2em auto 0 auto;
+  padding: 3em;
+}
+
+.features-row {
+  margin-bottom: 2em;
+  .feature {
+    text-align: center;
+
+    img {
+      height: 150px;
+    }
+  }
+}
+
+.features-title {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.btn-get-started-wrapper {
+  text-align: center;
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
+.btn-get-started {
+  font-size: 1.5em !important;
+}
